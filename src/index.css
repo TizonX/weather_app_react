@@ -1,13 +1,107 @@
-body {
+*
+{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.outerBody
+{
+  width: 100%;
+  height: 100vh;
+  background: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outerBody .innerBody
+{
+  width: 50%;
+  height: 80vh;
+  background-color: rgb(44, 90, 6);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.outerBody .innerBody .inputField
+{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 3rem;
+}
+.outerBody .innerBody .inputField input
+{
+  width: 70%;
+  height: 5vh;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  font-size: 1.5rem;
+  text-align: center;
+  color: gray;
+}
+.outerBody .innerBody .inputField input::placeholder
+{
+  font-size: 1.5rem;
+  text-align: center;
+  color: gray;
+}
+.outerBody .innerBody .inputField button
+{
+  width: 18%;
+  height: 5vh;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: gray;
+  border: 1px solid gray;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+.outerBody .innerBody .downField
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.outerBody .innerBody .downField i
+{
+  font-size: 5rem;
+  padding-bottom: 2rem;
+  color:gray;
+}
+.outerBody .innerBody .downField h1
+{
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: gray;
+}
+.outerBody .innerBody .downField h2
+{
+  font-size: 3rem;
+  padding-bottom: 3rem;
+}
+.outerBody .innerBody .downField p
+{
+  font-size: 1.5rem;
+  padding-bottom: 5rem;
+  color: gray;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media(max-width:576px)
+{
+  .outerBody .innerBody
+  {
+    width: 98%;
+  }
 }
